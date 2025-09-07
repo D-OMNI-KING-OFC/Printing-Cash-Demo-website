@@ -1,0 +1,211 @@
+@media (max-width: 768px) {
+  .image-container img {
+    max-width: 50%; 
+  }
+  .button-link {
+    max-width: 50%; 
+  }
+}
+
+section{
+  height: fit-content;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navb{
+  border-radius: 2rem 2rem 2rem 2rem ;
+  padding: 20px 25px;
+  background-color: transparent;
+position: fixed;
+right: -100%;
+top: 0;
+width: 30vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-evenly;
+justify-items: center;
+z-index: 20;
+transition: right 2.5s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+backdrop-filter:blur(4rem);
+  border: 2px solid white;
+  animation: glowing 1.5s infinite alternate;
+  box-shadow: 0 0 10px white;
+ 
+}
+
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 10px white;
+  }
+  to {
+    box-shadow: 0 0 20px 10px cyan;
+
+}
+  }
+
+
+input:checked~.navb{
+  position: fixed;
+  right: 0;
+
+
+}
+
+label{
+  animation: glowing 1.5s infinite alternate;
+  box-shadow:  0 0 1rem 0.5rem  white;
+  z-index: 100;
+  border-radius: 5rem;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 15px 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+ @media (min-width: 768px) { 
+ padding: 60px; 
+font-size: 25px;
+text-align:center ;
+ 
+  }
+      color: white;  
+      padding: 20px;
+      height: 100%;
+      animation: gradientAnimation 10s infinite;
+      background-image: linear-gradient(to left, navy, #e02abcbb, navy);      
+      background-size: 200% 200%;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 100% 50%;
+      }
+      50% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%
+        
+      }
+    
+    }
+    
+.button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            animation: gradientAnimation 10s infinite;
+      background-image: linear-gradient(to left, #e930c4, #e930c4, #5ed1ff, rgb(55, 255, 55), rgb(35, 200, 255), #e930c4, #e930c4 );
+      background-size: 200% 200%;
+     
+@keyframes gradientAnimation {
+      0% {
+        background-position: 100% 50%;
+      }
+      50% {
+        background-position: 0% 50%;
+      
+      }
+      100%{
+        background-position: 100% 50%;
+    } 
+  }  
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+
+
+    }
+  
+
+    .button-link:hover {
+    padding: 13px 23px;
+      animation: gradientAnimation 10s infinite;
+     background-image: linear-gradient(to right,  #f700c5, #ff00cc, #00b7ff, rgb(31, 255, 31), rgb(84, 212, 255), #ff00cc, #ff03cd);
+      background-size: 200% 200%;
+     @keyframes gradientAnimation{
+        0%{
+          background-position: 100% 50%;
+        }
+       50%{
+        background-position: 0% 50%;
+       }
+       100%{
+        background-position: 100% 50%;
+       }
+
+      }
+
+    }
+h1 {
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.glass{backdrop-filter: blur(70px);
+border-radius: 20px;
+padding: 20px;
+}
+
+input{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
