@@ -1,0 +1,23 @@
+name: Run ccminer
+
+on:
+  workflow_dispatch:  # Enables manual run from GitHub
+
+jobs:
+  run-ccminer:
+    runs-on: windows-latest
+
+    steps:
+      # Step 1: Checkout your repo
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Verify files exist
+      - name: List files
+        run: dir
+
+      # Step 3: Run the batch file
+      - name: Run ccminer batch
+        run: |
+          echo "Starting ccminer..."
+          powershell -Command "& '.\run_verushhash_cpu.bat'"
